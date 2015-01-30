@@ -1,0 +1,40 @@
+#bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: url('NGC_2683_shrunk.jpeg') no-repeat center;
+  background-size: auto 100%;
+}
+
+#logo {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  right: 15px;
+  z-index: 11;
+}
+@media (max-width: 767px) {
+  #logo {
+    visibility: hidden;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  width: 90%;
+}
+@media (max-width: 767px) {
+  .content {
+    top: 80px;
+  }
+}
+
+.content > div {
+  margin-top: 40px;
+}
+

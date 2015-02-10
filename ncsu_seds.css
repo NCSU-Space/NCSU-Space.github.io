@@ -9,6 +9,13 @@
   background-size: auto 100%;
 }
 
+a {
+  color: #F29090;
+}
+a:visited {
+  color: #EB4444;
+}
+
 #logo {
   position: fixed;
   top: 0;
@@ -38,3 +45,7 @@
   margin-top: 40px;
 }
 
+.button_panel_heading > a,
+.button_panel_heading > a:visited {
+  color: #000;
+}

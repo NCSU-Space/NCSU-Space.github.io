@@ -33,4 +33,8 @@ if(window.location.pathname == '/') {
 
 document.body.appendChild(nav);
 
-document.body.appendChild(fE('img', {id: 'logo', src: 'SEDS_NCSU_Logos-3.png', alt: 'SEDS-NCSU logo'}));
+document.body.appendChild(
+  fE('a', {id: 'logo', href: 'index.html', tabIndex: 5}, [
+    fE('img', {src: 'SEDS_NCSU_Logos-1.svg', alt: 'SEDS-NCSU logo'})
+  ])
+);

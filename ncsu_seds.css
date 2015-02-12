@@ -29,6 +29,11 @@ a:visited {
   }
 }
 
+#logo > img {
+  height: 100%;
+  width: 100%;
+}
+
 .content {
   position: absolute;
   top: 50px;

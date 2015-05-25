@@ -29,6 +29,16 @@ body {
   color: #FFF;
   background: rgba(0, 0, 0, 0.7);
 }
+.button_panel_figure {
+  float: left;
+  width: 40%;
+  min-width: 200px;
+  max-width: 400px;
+}
+.button_panel_figure > img,
+.button_panel_figure > a > img {
+    width: 100%;
+}
 .button_red > .button_panel_heading {
   background-image: linear-gradient(to bottom, #F29090 0, #EB4444 100%);
 }

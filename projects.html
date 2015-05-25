@@ -28,8 +28,8 @@ if(top !== self) {
 }
 </script>
 
-<link href="buttonui.css" rel="stylesheet">
-<link href="ncsu_seds.css" rel="stylesheet">
+<link href="/buttonui.css" rel="stylesheet">
+<link href="/ncsu_seds.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,10 +37,10 @@ if(top !== self) {
 <div class="content">
   <div class="button_red">
     <div class="button_panel_heading">
-      Weather Balloon
+      Satellites Around Mars
     </div>
     <div class="button_panel_body">
-      <p>Sharvil can put something here</p>
+      <p>We are participating in the Satellites Around Mars competition sponsored by <a href="http://seds.org/">SEDS-USA</a> and <a href="http://www.sspi.org/cpages/home">SSPI</a>. More details to come as we get started.</p>
     </div>
   </div>
   
@@ -49,26 +49,35 @@ if(top !== self) {
       Astropresence
     </div>
     <div class="button_panel_body">
-      <figure id="first">
-        <img src="Astropresence Assembled 1.jpg"></img>
+      <p>This was a project to build a prototype of a free-flying telepresence drone for the ISS, very similar to the <a href="http://spectrum.ieee.org/automaton/robotics/military-robots/nasa-new-freeflying-robot-to-conquer-iss-in-2017">'Free Flying Robot'</a> that NASA announced later.</p>
+      
+      <p>We built a prototype with a selection of low-power fans, designed for safe operation in a pressurized microgravity environment. It's a bit like a quadcopter with a video camera, but since it doesn't need to fight gravity and does need to not break anything, the fans are much smaller.</p>
+      
+      <p>The brains were supplied by an Odroid U3, a single-board Linux computer with a good bit more CPU power than the Raspberry PI. Fans were controller by a microcontroller and custom motor driver PCB. The UI was a web interface which presented low-latency streaming video, and gamepad and keyboard control to a Firefox or Chrome browser with no additional plugins or client software. A relay server was placed between the bot and users to handle video load and provide a security override.</p>
+      
+      <p>Control software and misc. other things available in our<a href="https://github.com/NCSU-Space/Astropresence">GitHub repo</a>.</p>
+      
+      <figure class="button_panel_figure">
+        <img src="/pics/Astropresence Assembled 1.jpg"></img>
         <figcaption>Fully assembled prototype<figcaption>
       </figure>
-      <p>Describe</p>
-      <p>Link to CASIS proposal - .pdf or another page?</p>
-      <p>Poster too somewhere</p>
-      <figure>
-        <img src="Astropresence ODroid Compartment 1.jpg"></img>
+      
+      <figure class="button_panel_figure">
+        <img src="/pics/Astropresence ODroid Compartment 1.jpg"></img>
         <figcaption>ODroid computer and battery pack<figcaption>
       </figure>
-      <figure>
-        <img src="Astropresence PCB Compartment 2.jpg"></img>
+      
+      <figure class="button_panel_figure">
+        <img src="/pics/Astropresence PCB Compartment 2.jpg"></img>
         <figcaption>DC converters and motor control PCB<figcaption>
       </figure>
+      
+      <div style="clear: both;"></div>
     </div>
   </div>
 </div>
 </body>
 
-<script type="text/javascript" src="shared_elements.js"></script>
+<script type="text/javascript" src="/shared_elements.js"></script>
 
 </html>

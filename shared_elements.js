@@ -15,10 +15,10 @@ var fE = function(/*string*/ tagName, /*Object*/ properties, /*Array*/ children)
 document.body.appendChild(fE('div', {id: 'bg'}));
 
 var nav = fE('nav', {className: 'button_nav'}, [
-  fE('a', {href: 'index.html', textContent: 'SEDS-NCSU', accessKey: 's', tabIndex: 1}),
-  fE('a', {href: 'projects.html', textContent: 'Projects', accessKey: 'r', tabIndex: 2}),
-  fE('a', {href: 'opportunities.html', textContent: 'Opportunities', accessKey: 'o', tabIndex: 3}),
-  fE('a', {href: 'contact.html', textContent: 'Contact', accessKey: 'c', tabIndex: 4}),
+  fE('a', {href: '/index.html', textContent: 'SEDS-NCSU', accessKey: 's', tabIndex: 1}),
+  fE('a', {href: '/projects.html', textContent: 'Projects', accessKey: 'r', tabIndex: 2}),
+  fE('a', {href: '/opportunities.html', textContent: 'Opportunities', accessKey: 'o', tabIndex: 3}),
+  fE('a', {href: '/contact.html', textContent: 'Contact', accessKey: 'c', tabIndex: 4}),
 ]);
 
 for(var i = 0, endi = nav.children.length; i < endi; ++i) {
@@ -34,7 +34,7 @@ if(window.location.pathname == '/') {
 document.body.appendChild(nav);
 
 document.body.appendChild(
-  fE('a', {id: 'logo', href: 'index.html', tabIndex: 5}, [
-    fE('img', {src: 'SEDS_NCSU_Logos-1.svg', alt: 'SEDS-NCSU logo'})
+  fE('a', {id: 'logo', href: '/index.html', tabIndex: 5}, [
+    fE('img', {src: '/SEDS_NCSU_Logos-1.svg', alt: 'SEDS-NCSU logo'})
   ])
 );
